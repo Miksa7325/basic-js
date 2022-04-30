@@ -20,7 +20,7 @@ function countCats(matrix) {
   for (let i = 0; i < matrix.length; i++) {
     let count = 0;
     while (matrix[i].includes('^^', count)) {
-      count = matrix[i].indexOf('^^', count);
+      count = matrix[i].indexOf('^^', count) + 1;
       number++; 
     }
   }
